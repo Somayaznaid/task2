@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>5.png</title>
-        <style>
-            table {
-                border: 1px solid;
-            }
-            th, td {
-                border: 1px solid;
-            }
-        </style>
-    </head>
-    <body>
-        <table>
-            <caption></caption>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table_CSS.css">
+    <title>Document</title>
+    <style>
+        #tab{
+            width: 100%;
+            border-style: none;
+        }
+        #tab td{
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <table style="border: 1px solid;">
+    <tr  style="border: 1px solid;">
+        <th style="border: 1px solid;" rowspan="3">  Day</th>
+        <th style="border: 1px solid;" colspan="4">  Seminar</th>
+        
+    </tr>
+    <tr>
+        <th style="border: 1px solid;" colspan="2"> Schedule</th>
+        <th style="border: 1px solid;"> Topic</th>
+    </tr>
+    <tr>
+        <th style="border: 1px solid;"> Begin</th>
+        <th style="border: 1px solid;"> End</th>
+        <th style="border: 1px solid;"> HeadCol3</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid;" rowspan="2"> Monday </td>
+        <td style="border: 1px solid;" rowspan="2"> 8:00 a.m</td>
+        <td style="border: 1px solid;" rowspan="2"> 5:00 p.m</td>
+        <td style="border: 1px solid;"> Introduction to Xml</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid;"> Validaty: DTD and Related NG</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid;" rowspan="3" > Tusday</td>
+        <td style="border: 1px solid;"> 8:00 a.m</td>
+        <td style="border: 1px solid;"> 11:00 a.m</td>
+        <td style="border: 1px solid;" rowspan="3" > 
+           <table id="tab">
             <tr>
-                <th scope="col" rowspan="3">Day</th>
-                <th scope="colgroup" colspan="4">Seminar</th>
+                <td style="border: 1px solid;">XPath </td>
             </tr>
             <tr>
-                <th scope="colgroup" colspan="2">Schedule</th>
-                <th scope="col" rowspan="2" colspan="2">Topic</th>
+                <td style="border: 1px solid;"> XSL Transformation </td>
             </tr>
-            <tr>
-                <th scope="col">Begin</th>
-                <th scope="col">End</th>
-            </tr>
-            <tr>
-                <td rowspan="2">Monday</td>
-                <td rowspan="2">8:00 a.m.</td>
-                <td rowspan="2">5:00 p.m.</td>
-                <td>Introduction to XML</td>
-            </tr>
-            <tr>
-                <td>Validity: DTD and Relax NG</td>
-            </tr>
-            <tr>
-                <td rowspan="3">Tuesday</td>
-                <td>8:00 a.m.</td>
-                <td>11:00 a.m.</td>
-                <td rowspan="3">
-                    <p>XPath
-                    <hr>
-                    XSL Transformations</p>
-                </td>
-            </tr>
-            <tr>
-                <td>11:00 a.m.</td>
-                <td>2:00 p.m.</td>
-            </tr>
-            <tr>
-                <td>2:00 p.m.</td>
-                <td>5:00 p.m.</td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>8:00 a.m.</td>
-                <td>12:00 p.m.</td>
-                <td>XSL Formatting Objects</td>
-            </tr>
-        </table>
-    </body>
+           </table> 
+          
+          </td>
+       
+    </tr>
+    <tr>
+        <td style="border: 1px solid;">  11:00 p.m</td>
+        <td style="border: 1px solid;"> 2:00 p.m</td>
+       
+    </tr>
+    <tr>
+        <td style="border: 1px solid;"> 2:00 p.m</td>
+        <td style="border: 1px solid;"> 5:00 p.m</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid;"> Wednesday</td>
+        <td style="border: 1px solid;"> 8:00 a.m</td>
+        <td style="border: 1px solid;"> 12:00 p.m</td>
+        <td style="border: 1px solid;"> XSL Formatting Objects</td>
+    </tr>
+</table>
+</body>
 </html>
-
